@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Mono+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #fff;
+    /* background: url(https://lh5.googleusercontent.com/YKaFZ_4WDlNUf0HZphNxaImtEhZeS0QpFDqfAz9JTyBJLAZ6JgQzhdLBK6QztH1V8XprCpHuhu1CCVRycHNrh7QJqogpu95MpSAdyHi_nPpRwEkLal-6Z42PmQVwIN__6VERWILVkOUlgefcrkkDr0M); */
+    /* background: url(imgblacksmit.jpg) no-repeat; */
+    /* background-size: cover; */
+    /* background-position: center; */
+    background-image: url(../img/background.jpg);
+}
+
+header {
+    width: 100%;
+    height: 140vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: url(../img/imgbg1.jpg);
+    /* background: url(https://st4.depositphotos.com/13349494/23275/i/450/depositphotos_232751862-stock-photo-dark-blue-shabby-wooden-background.jpg); */
+    /* background: url(https://lh5.googleusercontent.com/YKaFZ_4WDlNUf0HZphNxaImtEhZeS0QpFDqfAz9JTyBJLAZ6JgQzhdLBK6QztH1V8XprCpHuhu1CCVRycHNrh7QJqogpu95MpSAdyHi_nPpRwEkLal-6Z42PmQVwIN__6VERWILVkOUlgefcrkkDr0M); */
+    background-size: cover;
+    background-position: center;
+    margin-top: -1px;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 60vh;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0,));
+    
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 10%;
+    background: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(50px);
+    /* border-radius: 70px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
+
+
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(50px);
+    /* border-radius: 70px; */
+    z-index: -1;
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+    transition: .5s;
+}
+
+.header:hover::after {
+    left: 100%;
+}
+
+.logo {
+    font-size: 2rem;
+    color: #620000;
+    text-shadow: 0 0 10px #620000;
+    /* text-transform: uppercase; */
+    /* -webkit-text-stroke: 0.20px #fff; */
+    text-decoration: none;
+    font-weight: 700;
+    margin: -70px;
+}
+
+.contact {
+    font-size: 1rem;
+    background-color: #620000;
+    color: #fff;
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.338); 
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 1rem;
+    margin: 0 0 0 190px;
+
+}
+
+.navbar a {
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 2.25rem;
+}
+
+.box .text2{
+    font-family: "Playfair Display", serif;
+}
+section {
+    display: flex;
+ 
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 100px;
+    margin-top: -500px;
+}
+.box {
+    position: relative;
+    justify-content: center;
+    min-height: 100vh;
+    color: #fff;
+    text-align: center;
+}
+
+.judul1 {
+    color: #620000;
+    padding: 10px;
+    font-size: 80px;
+    margin-top: -80%;
+}
+
+.title-figure{
+    text-align: center; 
+    padding: 20px;
+    font-size: 50px;
+    font-family: "Rubik Mono One", monospace;
+}
+.brand{
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.338);
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    margin: 40px;
+    margin-top: -20%;
+    position: absolute;
+    width: 90%;
+}
+.brand .image .img{
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    width: 600px;
+    height: 100%;
+}
+.brand .Text .title{
+    text-align: center;
+    margin-top: 30px;
+    /* margin-left: 90px; */
+    font-size: 27px;
+}
+.brand .Text{
+    padding: 40px;
+}
+.brand .Text .title1{
+    padding-top: 10px;
+    text-align: center;
+    /* margin-left: 110px; */
+}
+.brand .Text .desk{
+    padding-top: 30px;
+    text-align: center;
+}
+.brand .Text .img {
+    border-radius: 30px;
+    padding-top: 10px;
+    margin-left: 17%;
+    width: 300px;
+    height: 200px;
+}
+.tulis-judul .jud{
+    margin-top: 20rem;
+    text-align: center;
+
+}
+.card-container{
+    display: flex;  
+    margin-top: 4%;
+    justify-content: center;
+}
+.card-container .card{
+    padding: 10px;
+    margin-right: 15px;
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.338);
+}
+.card-container img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.card-content{
+    text-align: center;
+    font-size: 10px;
+}
+
+
+
+/* .container-card{ */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* gap: 20px; */
+    /* padding: 20px; */
+/* } */
+/* .container-card .card{ */
+    /* /* width: 100px; */
+    /* height: 100px; */ 
+    
+/* } */
+/* .container-card .card img{ */
+    /* height: 200px; */
+    /* width: 100%; */
+    /* display: block; */
+    /* margin: 0 auto; */
+/* } */
